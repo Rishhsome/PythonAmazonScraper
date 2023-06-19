@@ -10,7 +10,7 @@ def get_ProductName(soup):
         # Extracting Product's Name
         title_string = soup.find("span", attrs={"id": 'productTitle'}).string.strip()
     except AttributeError:
-        title_string = "N/A"
+        title_string = "NONE"
 
     return title_string
 
